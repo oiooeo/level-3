@@ -1,7 +1,7 @@
 import React from "react";
 import { PrimaryButton, NegativeButton } from "./StyledButton";
 import styled from "styled-components";
-import { IconBell, IconRight } from "./Icon";
+import { IconBell, IconRight } from "../../shared/Icon";
 
 function FeatureButton() {
   return (
