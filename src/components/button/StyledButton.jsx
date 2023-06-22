@@ -2,13 +2,13 @@ import React from "react";
 import styled, { css } from "styled-components";
 
 // Primary Button Style
-export const PrimaryButton = ({ children, ...restProps }) => {
-  return <Primary {...restProps}>{children}</Primary>;
+export const PrimaryButton = ({ children, ...props }) => {
+  return <Primary {...props}>{children}</Primary>;
 };
 
 // Primary Button Style
-export const NegativeButton = ({ children, ...restProps }) => {
-  return <Negative {...restProps}>{children}</Negative>;
+export const NegativeButton = ({ children, ...props }) => {
+  return <Negative {...props}>{children}</Negative>;
 };
 
 const Normal = styled.button`
@@ -91,3 +91,6 @@ const Negative = styled(Normal)`
     }
   }}
 `;
+
+const Buttons = { PrimaryButton, NegativeButton };
+export default Buttons;
