@@ -1,13 +1,11 @@
 import React from "react";
 import { PrimaryButton, NegativeButton } from "./StyledButton";
 import styled from "styled-components";
-import { IconBell, IconRight } from "./Icon";
+import { IconBell, IconRight } from "../../shared/Icon";
 
 function FeatureButton() {
   return (
-    <div>
-      <h1>Button</h1>
-
+    <>
       <Buttons>
         <PrimaryButton
           size="large"
@@ -37,7 +35,7 @@ function FeatureButton() {
         <NegativeButton size="medium">Medium</NegativeButton>
         <NegativeButton size="small">Small</NegativeButton>
       </Buttons>
-    </div>
+    </>
   );
 }
 
