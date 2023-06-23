@@ -18,7 +18,7 @@ function OverlayClosingModal({ buttonTwoClickHandler }) {
 
 const ModalBackDiv = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   inset: 0px;
   position: fixed;
   opacity: 0.8;
