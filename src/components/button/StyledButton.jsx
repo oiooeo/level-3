@@ -60,7 +60,6 @@ const Primary = styled(Normal)`
       return css`
         background-color: #ffffff;
         border: 3px solid #5abaff;
-        display: flex;
 
         &:active {
           background-color: #eeeeee;
@@ -82,7 +81,6 @@ const Negative = styled(Normal)`
       return css`
         background-color: #ffffff;
         border: 3px solid #ff5a5a;
-        display: flex;
 
         &:active {
           background-color: #eeeeee;
