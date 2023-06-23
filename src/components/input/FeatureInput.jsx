@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import styled from "styled-components";
 import { addInput } from "../../redux/modules/input";
 import Buttons from "../button/StyledButton";
+import { H1 } from "../../shared/GlobalStyle";
 
 const FeatureInput = () => {
   const [tag, setTag] = useState({
@@ -43,21 +44,24 @@ const FeatureInput = () => {
   };
 
   return (
-    <Form onSubmit={clickAddButtonHandler}>
-      <InputGroup>
-        <b>이름</b> &nbsp;
-        <Input name="name" value={tag.name} onChange={setValue} required />
-        <b>가격</b> &nbsp;
-        <Input
-          name="price"
-          value={inputPriceFormat(tag.price)}
-          onChange={setValue}
-          placeholder="0"
-          required
-        />
-      </InputGroup>
-      <Buttons.PrimaryButton>저장</Buttons.PrimaryButton>
-    </Form>
+    <>
+      <H1>Input</H1>
+      <Form onSubmit={clickAddButtonHandler}>
+        <InputGroup>
+          <b>이름</b> &nbsp;
+          <Input name="name" value={tag.name} onChange={setValue} required />
+          <b>가격</b> &nbsp;
+          <Input
+            name="price"
+            value={inputPriceFormat(tag.price)}
+            onChange={setValue}
+            placeholder="0"
+            required
+          />
+        </InputGroup>
+        <Buttons.PrimaryButton>저장</Buttons.PrimaryButton>
+      </Form>
+    </>
   );
 };
 

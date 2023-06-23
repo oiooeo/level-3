@@ -2,10 +2,12 @@ import React from "react";
 import { PrimaryButton, NegativeButton } from "./StyledButton";
 import styled from "styled-components";
 import { IconBell, IconRight } from "../../shared/Icon";
+import { H1 } from "../../shared/GlobalStyle";
 
 function FeatureButton() {
   return (
     <>
+      <H1>Button</H1>
       <Buttons>
         <PrimaryButton
           size="large"
