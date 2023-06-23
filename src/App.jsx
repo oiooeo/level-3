@@ -3,20 +3,22 @@ import styled from "styled-components";
 import FeatureButton from "./components/button/FeatureButton";
 import FeatureInput from "./components/input/FeatureInput";
 import FeatureSelect from "./components/select/FeatureSelect";
+import FeatureModal from "./components/modal/FeatureModal";
 
 function App() {
   return (
-    <div>
+    <>
       <H1>Button</H1>
       <FeatureButton />
       <H1>Input</H1>
       <FeatureInput />
       <H1>Modal</H1>
-      <BigDiv>
+      <FeatureModal />
+      <SelectDiv>
         <H1>Select</H1>
         <FeatureSelect />
-      </BigDiv>
-    </div>
+      </SelectDiv>
+    </>
   );
 }
 
@@ -27,7 +29,7 @@ const H1 = styled.h1`
   margin-top: 30px;
 `;
 
-const BigDiv = styled.div`
+const SelectDiv = styled.div`
   height: 200px;
   border: 3px solid rgb(221, 221, 221);
   overflow: hidden;
