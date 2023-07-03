@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { H1 } from "../../shared/GlobalStyle";
+import { P } from "../../shared/GlobalStyle";
 import VisibleSelect from "./VisibleSelect";
 import HiddenSelect from "./HiddenSelect";
 
 function FeatureSelect() {
   return (
     <>
-      <H1>Select</H1>
+      <P>Select</P>
       <SelectButtons>
         <VisibleSelect />
         <HiddenSelect />

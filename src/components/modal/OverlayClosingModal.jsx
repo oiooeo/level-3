@@ -23,6 +23,7 @@ const ModalBackDiv = styled.div`
   position: fixed;
   opacity: 0.8;
   background-color: rgb(221, 221, 221);
+  z-index: 3;
 `;
 
 const ModalDiv = styled.div`
@@ -37,6 +38,7 @@ const ModalDiv = styled.div`
   height: 200px;
   position: absolute;
   line-height: 2rem;
+  z-index: 3;
 `;
 
 const CloseButton = styled.button`
@@ -46,6 +48,7 @@ const CloseButton = styled.button`
   border-radius: 100%;
   cursor: pointer;
   float: right;
+  z-index: 3;
 `;
 
 export default OverlayClosingModal;

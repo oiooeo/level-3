@@ -33,6 +33,7 @@ const ModalBackDiv = styled.div`
   position: fixed;
   opacity: 0.8;
   background-color: rgb(221, 221, 221);
+  z-index: 3;
 `;
 
 const ModalDiv = styled.div`
@@ -47,6 +48,7 @@ const ModalDiv = styled.div`
   height: 300px;
   position: absolute;
   line-height: 2rem;
+  z-index: 3;
 `;
 
 const ButtonsDiv = styled.div`
@@ -55,6 +57,7 @@ const ButtonsDiv = styled.div`
   right: 12px;
   display: flex;
   gap: 3px;
+  z-index: 3;
 `;
 
 export default TwoButtonsModal;

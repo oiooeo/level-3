@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-export const H1 = ({ children }) => {
-  return <StyledH1>{children}</StyledH1>;
+export const P = ({ children }) => {
+  return <StyledP>{children}</StyledP>;
 };
 
-const StyledH1 = styled.h1`
+const StyledP = styled.p`
   font-size: 35px;
   font-weight: 700;
   margin: 10px;
