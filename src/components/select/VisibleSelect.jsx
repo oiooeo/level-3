@@ -63,6 +63,7 @@ const List = styled.ul`
   list-style: none;
   position: absolute;
   top: 700px;
+  z-index: 2;
 `;
 
 const ListItem = styled.li`
@@ -75,6 +76,7 @@ const ListItem = styled.li`
   border-right: 1px solid lightgrey;
   font-size: 13px;
   cursor: pointer;
+  z-index: 2;
 
   &:hover {
     background-color: #deffc1;

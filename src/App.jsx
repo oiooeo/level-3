@@ -23,7 +23,7 @@ const SelectDiv = styled.div`
   border: 3px solid rgb(221, 221, 221);
   position: relative;
   overflow: hidden;
-  margin: 10px;
-  margin-top: 50px;
+  margin: 50px 10px 10px;
+  z-index: 1;
 `;
 export default App;

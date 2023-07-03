@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Buttons from "../button/StyledButton";
 import OverlayClosingModal from "./OverlayClosingModal";
 import TwoButtonsModal from "./TwoButtonsModal";
-import { H1 } from "../../shared/GlobalStyle";
+import { P } from "../../shared/GlobalStyle";
 
 function FeatureModal() {
   const [twoButtonsModal, setTwoButtonsModal] = useState(false);
@@ -18,7 +18,7 @@ function FeatureModal() {
 
   return (
     <>
-      <H1>Modal</H1>
+      <P>Modal</P>
       <Buttons.NegativeButton
         size="medium"
         outlined="true"
