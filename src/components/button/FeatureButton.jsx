@@ -2,23 +2,21 @@ import React from "react";
 import { PrimaryButton, NegativeButton } from "./StyledButton";
 import styled from "styled-components";
 import { IconBell, IconRight } from "../../shared/Icon";
-import { H1 } from "../../shared/GlobalStyle";
+import { P } from "../../shared/GlobalStyle";
 
 function FeatureButton() {
   return (
     <>
-      <H1>Button</H1>
+      <P>Button</P>
       <Buttons>
         <PrimaryButton
           size="large"
           outlined="true"
           onClick={() => window.alert("버튼을 만들어보세요")}
         >
-          <>
-            <LabelWithIcon>
-              Large Primary Button <IconRight />
-            </LabelWithIcon>
-          </>
+          <LabelWithIcon>
+            Large Primary Button <IconRight />
+          </LabelWithIcon>
         </PrimaryButton>
         <PrimaryButton size="medium">Medium</PrimaryButton>
         <PrimaryButton size="small">Small</PrimaryButton>

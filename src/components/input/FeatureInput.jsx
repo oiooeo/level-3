@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import styled from "styled-components";
 import { addInput } from "../../redux/modules/input";
 import Buttons from "../button/StyledButton";
-import { H1 } from "../../shared/GlobalStyle";
+import { P } from "../../shared/GlobalStyle";
 
 const FeatureInput = () => {
   const [tag, setTag] = useState({
@@ -45,7 +45,7 @@ const FeatureInput = () => {
 
   return (
     <>
-      <H1>Input</H1>
+      <P>Input</P>
       <Form onSubmit={clickAddButtonHandler}>
         <InputGroup>
           <b>이름</b> &nbsp;
